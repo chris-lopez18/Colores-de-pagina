@@ -1,0 +1,47 @@
+/* estos seran los colores de la pagina y se definiran con estas variables*/
+
+:root{
+	--colorprincipal: #1E3C70;
+	--colorsecundario: #BB8800;
+	--colorgris: rgba(59, 64, 66, 0.4);
+	--coloraclaro: #0A7D99;
+	;
+}
+ 
+h1 {
+  margin: 16px;
+  font-weight: 300;
+}
+
+.caja{
+  border: 1px solid black;
+  width: 250px;
+  margin: 16px;
+}
+
+.caja .azul, .caja .dorado, .caja .gris, .caja .aclaro {
+  width: 100%;
+  height: 100px;
+}
+
+/* Colores con variable (se podra de esta forma en el color, background, etc. var(--variable del color);) */
+/* Color Azul */
+.caja .azul {
+  background: var(--colorprincipal);
+}
+
+/* Color Dorado */
+.caja .dorado {
+  background: var(--colorsecundario);
+
+}
+/* Color Gris (Este color ira al 40%) */
+.caja .gris {
+  background: var(--colorgris);
+   
+}
+
+/* Color Azul Claro */
+.caja .aclaro {
+  background: var(--coloraclaro);
+}
